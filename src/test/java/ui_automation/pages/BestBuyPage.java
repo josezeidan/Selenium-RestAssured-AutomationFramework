@@ -46,6 +46,12 @@ public class BestBuyPage {
     @FindBy(xpath = "//div[@class='sku-title']/h1")
     public WebElement laptopName;
 
+    @FindBy(xpath = "//button[contains(@class,'c-button-link continue-shopping')]")
+    public WebElement continueShopping;
+
+    @FindBy(xpath = "(//ul[@class='item-list']//div//a)[1]")
+    public WebElement nameFromCartPage;
+
     /**
      * method return a list of WebElements (laptops)
      * @return List<WebElement>

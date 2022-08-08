@@ -20,11 +20,9 @@ public class GoogleHPage {
     @FindBy(xpath = "//div[@class='FPdoLc lJ9FBc']/center/input[@name='btnK']")
     public WebElement searchButton;
 
-//    @FindBy(id = "LoginButton")
-//    public WebElement loginBtn;
-//
-//    @FindBy(xpath = "//*[contains(text(),'Expenses')]")
-//    public WebElement expensesTab;
+    @FindBy(xpath = "//div[@class='yuRUbf']/a/h3[contains(text(),'Best Buy')]")
+    public WebElement bestBuy;
+
 
 
 
