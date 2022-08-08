@@ -250,3 +250,46 @@
 2022-08-08 15:41:37,780 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.gecko.driver as C:\Users\jzedan\.m2\repository\webdriver\geckodriver\win64\0.31.0\geckodriver.exe
 2022-08-08 15:52:43,699 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (since Google Chrome 104 is installed in your machine)
 2022-08-08 15:52:43,791 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-08 16:55:06,931 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (since Google Chrome 104 is installed in your machine)
+2022-08-08 16:55:06,956 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-08 16:55:49,336 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (since Google Chrome 104 is installed in your machine)
+2022-08-08 16:55:49,361 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-08 16:58:24,221 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (since Google Chrome 104 is installed in your machine)
+2022-08-08 16:58:24,276 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-08 17:21:13,130 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (since Google Chrome 104 is installed in your machine)
+2022-08-08 17:21:13,154 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-08 17:22:47,619 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (since Google Chrome 104 is installed in your machine)
+2022-08-08 17:22:47,646 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-08 17:25:50,856 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (since Google Chrome 104 is installed in your machine)
+2022-08-08 17:25:50,883 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-08 17:27:03,344 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (since Google Chrome 104 is installed in your machine)
+2022-08-08 17:27:03,371 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-08 17:32:50,270 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (since Google Chrome 104 is installed in your machine)
+2022-08-08 17:32:50,296 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-08 17:35:12,175 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (since Google Chrome 104 is installed in your machine)
+2022-08-08 17:35:12,200 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-08 17:36:14,820 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (since Google Chrome 104 is installed in your machine)
+2022-08-08 17:36:14,846 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-08 18:40:21,041 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (since Google Chrome 104 is installed in your machine)
+2022-08-08 18:40:21,062 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-08 18:41:58,370 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (since Google Chrome 104 is installed in your machine)
+2022-08-08 18:41:58,393 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-08 18:43:06,636 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (since Google Chrome 104 is installed in your machine)
+2022-08-08 18:43:06,663 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-08 18:43:24,992 - ui_automation.utilities.WaitHelper -INFO - 5000
+2022-08-08 18:44:12,509 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (since Google Chrome 104 is installed in your machine)
+2022-08-08 18:44:12,536 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-08 18:44:35,578 - ui_automation.utilities.WaitHelper -INFO - 5000
+2022-08-08 18:51:20,940 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (since Google Chrome 104 is installed in your machine)
+2022-08-08 18:51:20,969 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-08 18:51:54,272 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (since Google Chrome 104 is installed in your machine)
+2022-08-08 18:51:54,297 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-08 18:52:16,918 - ui_automation.utilities.WaitHelper -INFO - 5000
+2022-08-08 18:53:20,896 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (since Google Chrome 104 is installed in your machine)
+2022-08-08 18:53:20,918 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-08 18:53:48,778 - ui_automation.utilities.WaitHelper -INFO - 5000
+2022-08-08 18:54:57,521 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (since Google Chrome 104 is installed in your machine)
+2022-08-08 18:54:57,551 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\104.0.5112.79\chromedriver.exe
+2022-08-08 18:55:23,610 - ui_automation.utilities.WaitHelper -INFO - 5000
+2022-08-08 19:05:58,336 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 104.0.5112.79 (since Google Chrome 104 is installed in your machine)
+2022-08-08 19:05:58,363 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\104.0.5112.79\chromedriver.exe
