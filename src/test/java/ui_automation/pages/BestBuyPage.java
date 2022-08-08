@@ -12,14 +12,15 @@ import java.util.List;
 public class BestBuyPage {
 
     WebDriver driver;
-    public BestBuyPage(){
-        driver= Driver.getInstance().getDriver();
+
+    public BestBuyPage() {
+        driver = Driver.getInstance().getDriver();
         PageFactory.initElements(driver, this);
     }
 
     public By laptopListLocator = By.xpath("//div[@id='main-results']/ol/li//div[@class='information']/h4/a");
 
-    @FindBy(id= "gh-search-input")
+    @FindBy(id = "gh-search-input")
     public WebElement searchInput;
 
     @FindBy(xpath = "//a[contains(text(),'PC Laptops')]")
@@ -54,17 +55,20 @@ public class BestBuyPage {
 
     /**
      * method return a list of WebElements (laptops)
+     *
      * @return List<WebElement>
-     * */
-    public List<WebElement> laptopListGenerator(){
+     */
+    public List<WebElement> laptopListGenerator() {
 
-       return driver.findElements(By.xpath("//div[@id='main-results']/ol/li//div[@class='information']/h4/a"));
+        return driver.findElements(By.xpath("//div[@id='main-results']/ol/li//div[@class='information']/h4/a"));
     }
+
     /**
      * method return a list of WebElements (rates)
+     *
      * @return List<WebElement>
-     * */
-    public List<WebElement> ratesListGenerator(){
+     */
+    public List<WebElement> ratesListGenerator() {
 
         return driver.findElements(By.xpath("//div[@id='main-results']/ol/li//div[@class='ratings-reviews']//i/following-sibling::span"));
     }

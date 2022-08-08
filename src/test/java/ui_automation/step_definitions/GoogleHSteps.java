@@ -22,7 +22,9 @@ public class GoogleHSteps {
     WebDriver driver = Driver.getInstance().getDriver();
 
     GoogleHPage googleObj = new GoogleHPage();
+
     Actions act = new Actions(driver);
+
     WebDriverWait wait = new WebDriverWait(driver,30);
 
 
@@ -39,14 +41,31 @@ public class GoogleHSteps {
         List<String> searchWords = dataTable.asList(String.class);
         googleObj.searchInput.sendKeys(searchWords.get(0));
         googleObj.searchInput.sendKeys(Keys.ENTER);
+      //  Thread.sleep(3000);
+      //  WebElement outside = driver.findElement(By.xpath("//div[@class='o3j99 qarstb']"));
+      //  outside.click();
+
+       // Thread.sleep(3000);
+       // googleObj.searchButton.click();
+
 
     }
 
     @Then("User chooses the specific link we want to navigate to")
     public void user_chooses_the_specific_link_we_want_to_navigate_to() throws InterruptedException {
 
-        wait.until(ExpectedConditions.elementToBeClickable(googleObj.bestBuy));
-        googleObj.bestBuy.click();
+
+        WebElement bestBuy = driver.findElement(By.xpath("//div[@class='yuRUbf']/a/h3[contains(text(),'Best Buy')]"));
+        wait.until(ExpectedConditions.elementToBeClickable(bestBuy));
+       // Thread.sleep(3000);
+       // act.moveToElement(bestBuy);
+ //      ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", bestBuy);
+//        JavascriptExecutor jse = (JavascriptExecutor) driver;
+//        jse.executeScript("arguments[0].scrollIntoView(true);",bestBuy);
+        bestBuy.click();
+
+
+
     }
 
     @Then("User verifies that landed into the specific page")

@@ -7,11 +7,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"pretty","html:target/cucumber",
-        "json:target/cucumber.json"},
-        features="src/test/resources/uiFeatures",
-        glue="ui_automation.step_definitions",
-        tags="@test",
+        plugin = {"pretty", "html:target/cucumber",
+                "json:target/cucumber.json"},
+        features = "src/test/resources/uiFeatures",
+        glue = "ui_automation.step_definitions",
+        tags = "@test",
         dryRun = false,
         monochrome = true
 )
