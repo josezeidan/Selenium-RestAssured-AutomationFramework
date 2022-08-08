@@ -9,8 +9,9 @@ import ui_automation.utilities.Driver;
 public class GoogleHPage {
 
     WebDriver driver;
-    public GoogleHPage(){
-        driver= Driver.getInstance().getDriver();
+
+    public GoogleHPage() {
+        driver = Driver.getInstance().getDriver();
         PageFactory.initElements(driver, this);
     }
 
