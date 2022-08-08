@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="This feature file validate some google functionalities" time="33.902" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\jzedan\Desktop\Selenium-RestAssured-AutomationFramework\target\test-classes;C:\Users\jzedan\Desktop\Selenium-RestAssured-AutomationFramework\target\classes;C:\Users\jzedan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\jzedan\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\jzedan\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\jzedan\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\jzedan\.m2\repository\io\rest-assured\rest-assured\4.5.1\rest-assured-4.5.1.jar;C:\Users\jzedan\.m2\repository\org\codehaus\groovy\groovy\3.0.9\groovy-3.0.9.jar;C:\Users\jzedan\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.9\groovy-xml-3.0.9.jar;C:\Users\jzedan\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\jzedan\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\jzedan\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\jzedan\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\jzedan\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\jzedan\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\jzedan\.m2\repository\io\rest-assured\json-path\4.5.1\json-path-4.5.1.jar;C:\Users\jzedan\.m2\repository\org\codehaus\groovy\groovy-json\3.0.9\groovy-json-3.0.9.jar;C:\Users\jzedan\.m2\repository\io\rest-assured\rest-assured-common\4.5.1\rest-assured-common-4.5.1.jar;C:\Users\jzedan\.m2\repository\io\rest-assured\xml-path\4.5.1\xml-path-4.5.1.jar;C:\Users\jzedan\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\jzedan\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.1\jackson-databind-2.10.1.jar;C:\Users\jzedan\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.1\jackson-annotations-2.10.1.jar;C:\Users\jzedan\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.1\jackson-core-2.10.1.jar;C:\Users\jzedan\.m2\repository\com\github\javafaker\javafaker\0.16\javafaker-0.16.jar;C:\Users\jzedan\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\jzedan\.m2\repository\org\yaml\snakeyaml\1.20\snakeyaml-1.20-android.jar;C:\Users\jzedan\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\jzedan\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\jzedan\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\jzedan\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\jzedan\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\jzedan\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\jzedan\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\jzedan\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\jzedan\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\jzedan\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\jzedan\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\jzedan\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\jzedan\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\jzedan\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\jzedan\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\jzedan\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\jzedan\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\jzedan\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\jzedan\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\jzedan\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\jzedan\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\jzedan\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\jzedan\.m2\repository\io\github\bonigarcia\webdrivermanager\3.7.1\webdrivermanager-3.7.1.jar;C:\Users\jzedan\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;C:\Users\jzedan\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\jzedan\.m2\repository\org\jsoup\jsoup\1.11.3\jsoup-1.11.3.jar;C:\Users\jzedan\.m2\repository\io\cucumber\cucumber-java\4.8.1\cucumber-java-4.8.1.jar;C:\Users\jzedan\.m2\repository\io\cucumber\cucumber-core\4.8.1\cucumber-core-4.8.1.jar;C:\Users\jzedan\.m2\repository\io\cucumber\gherkin\5.1.0\gherkin-5.1.0.jar;C:\Users\jzedan\.m2\repository\io\cucumber\tag-expressions\1.1.1\tag-expressions-1.1.1.jar;C:\Users\jzedan\.m2\repository\io\cucumber\cucumber-expressions\7.0.2\cucumber-expressions-7.0.2.jar;C:\Users\jzedan\.m2\repository\io\cucumber\datatable\1.1.14\datatable-1.1.14.jar;C:\Users\jzedan\.m2\repository\io\cucumber\datatable-dependencies\1.1.14\datatable-dependencies-1.1.14.jar;C:\Users\jzedan\.m2\repository\io\cucumber\cucumber-junit\4.8.1\cucumber-junit-4.8.1.jar;C:\Users\jzedan\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\jzedan\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\jzedan\.m2\repository\org\apache\poi\poi-ooxml\4.1.0\poi-ooxml-4.1.0.jar;C:\Users\jzedan\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.0\poi-ooxml-schemas-4.1.0.jar;C:\Users\jzedan\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\jzedan\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\jzedan\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\jzedan\.m2\repository\org\apache\poi\poi\4.1.0\poi-4.1.0.jar;C:\Users\jzedan\.m2\repository\commons-codec\commons-codec\1.12\commons-codec-1.12.jar;C:\Users\jzedan\.m2\repository\org\apache\commons\commons-collections4\4.3\commons-collections4-4.3.jar;C:\Users\jzedan\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\jzedan\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\jzedan\.m2\repository\mysql\mysql-connector-java\8.0.18\mysql-connector-java-8.0.18.jar;C:\Users\jzedan\.m2\repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;C:\Users\jzedan\.m2\repository\com\jayway\jsonpath\json-path\2.3.0\json-path-2.3.0.jar;C:\Users\jzedan\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\jzedan\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\jzedan\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\jzedan\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;C:\Users\jzedan\.m2\repository\com\microsoft\sqlserver\mssql-jdbc\8.2.2.jre8\mssql-jdbc-8.2.2.jre8.jar;C:\Users\jzedan\.m2\repository\org\slf4j\slf4j-log4j12\1.7.5\slf4j-log4j12-1.7.5.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin"/>
+    <property name="sun.java.command" value="C:\Users\jzedan\AppData\Local\Temp\surefire4825386445454270915\surefirebooter4017280802477313368.jar C:\Users\jzedan\AppData\Local\Temp\surefire4825386445454270915 2022-08-08T15-41-32_516-jvmRun1 surefire10731802388471747964tmp surefire_09781606155714630730tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="runners.UITestRunner"/>
+    <property name="surefire.test.class.path" value="C:\Users\jzedan\Desktop\Selenium-RestAssured-AutomationFramework\target\test-classes;C:\Users\jzedan\Desktop\Selenium-RestAssured-AutomationFramework\target\classes;C:\Users\jzedan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\jzedan\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\jzedan\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\jzedan\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\jzedan\.m2\repository\io\rest-assured\rest-assured\4.5.1\rest-assured-4.5.1.jar;C:\Users\jzedan\.m2\repository\org\codehaus\groovy\groovy\3.0.9\groovy-3.0.9.jar;C:\Users\jzedan\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.9\groovy-xml-3.0.9.jar;C:\Users\jzedan\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\jzedan\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\jzedan\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\jzedan\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\jzedan\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\jzedan\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\jzedan\.m2\repository\io\rest-assured\json-path\4.5.1\json-path-4.5.1.jar;C:\Users\jzedan\.m2\repository\org\codehaus\groovy\groovy-json\3.0.9\groovy-json-3.0.9.jar;C:\Users\jzedan\.m2\repository\io\rest-assured\rest-assured-common\4.5.1\rest-assured-common-4.5.1.jar;C:\Users\jzedan\.m2\repository\io\rest-assured\xml-path\4.5.1\xml-path-4.5.1.jar;C:\Users\jzedan\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\jzedan\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.1\jackson-databind-2.10.1.jar;C:\Users\jzedan\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.1\jackson-annotations-2.10.1.jar;C:\Users\jzedan\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.1\jackson-core-2.10.1.jar;C:\Users\jzedan\.m2\repository\com\github\javafaker\javafaker\0.16\javafaker-0.16.jar;C:\Users\jzedan\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\jzedan\.m2\repository\org\yaml\snakeyaml\1.20\snakeyaml-1.20-android.jar;C:\Users\jzedan\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\jzedan\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\jzedan\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\jzedan\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\jzedan\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\jzedan\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\jzedan\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\jzedan\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\jzedan\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\jzedan\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\jzedan\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\jzedan\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\jzedan\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\jzedan\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\jzedan\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\jzedan\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\jzedan\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\jzedan\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\jzedan\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\jzedan\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\jzedan\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\jzedan\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\jzedan\.m2\repository\io\github\bonigarcia\webdrivermanager\3.7.1\webdrivermanager-3.7.1.jar;C:\Users\jzedan\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;C:\Users\jzedan\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\jzedan\.m2\repository\org\jsoup\jsoup\1.11.3\jsoup-1.11.3.jar;C:\Users\jzedan\.m2\repository\io\cucumber\cucumber-java\4.8.1\cucumber-java-4.8.1.jar;C:\Users\jzedan\.m2\repository\io\cucumber\cucumber-core\4.8.1\cucumber-core-4.8.1.jar;C:\Users\jzedan\.m2\repository\io\cucumber\gherkin\5.1.0\gherkin-5.1.0.jar;C:\Users\jzedan\.m2\repository\io\cucumber\tag-expressions\1.1.1\tag-expressions-1.1.1.jar;C:\Users\jzedan\.m2\repository\io\cucumber\cucumber-expressions\7.0.2\cucumber-expressions-7.0.2.jar;C:\Users\jzedan\.m2\repository\io\cucumber\datatable\1.1.14\datatable-1.1.14.jar;C:\Users\jzedan\.m2\repository\io\cucumber\datatable-dependencies\1.1.14\datatable-dependencies-1.1.14.jar;C:\Users\jzedan\.m2\repository\io\cucumber\cucumber-junit\4.8.1\cucumber-junit-4.8.1.jar;C:\Users\jzedan\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\jzedan\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\jzedan\.m2\repository\org\apache\poi\poi-ooxml\4.1.0\poi-ooxml-4.1.0.jar;C:\Users\jzedan\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.0\poi-ooxml-schemas-4.1.0.jar;C:\Users\jzedan\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\jzedan\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\jzedan\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\jzedan\.m2\repository\org\apache\poi\poi\4.1.0\poi-4.1.0.jar;C:\Users\jzedan\.m2\repository\commons-codec\commons-codec\1.12\commons-codec-1.12.jar;C:\Users\jzedan\.m2\repository\org\apache\commons\commons-collections4\4.3\commons-collections4-4.3.jar;C:\Users\jzedan\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\jzedan\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\jzedan\.m2\repository\mysql\mysql-connector-java\8.0.18\mysql-connector-java-8.0.18.jar;C:\Users\jzedan\.m2\repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;C:\Users\jzedan\.m2\repository\com\jayway\jsonpath\json-path\2.3.0\json-path-2.3.0.jar;C:\Users\jzedan\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\jzedan\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\jzedan\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\jzedan\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;C:\Users\jzedan\.m2\repository\com\microsoft\sqlserver\mssql-jdbc\8.2.2.jre8\mssql-jdbc-8.2.2.jre8.jar;C:\Users\jzedan\.m2\repository\org\slf4j\slf4j-log4j12\1.7.5\slf4j-log4j12-1.7.5.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\jzedan"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-01-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\jzedan\Desktop\Selenium-RestAssured-AutomationFramework"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\jzedan\AppData\Local\Temp\surefire4825386445454270915\surefirebooter4017280802477313368.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.2+8-LTS-86"/>
+    <property name="user.name" value="jzedan"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="browser" value="firefox"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\jzedan\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\jzedan\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.2"/>
+    <property name="user.dir" value="C:\Users\jzedan\Desktop\Selenium-RestAssured-AutomationFramework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="webdriver.gecko.driver" value="C:\Users\jzedan\.m2\repository\webdriver\geckodriver\win64\0.31.0\geckodriver.exe"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-17.0.2\bin;C:\Program Files\Git\cmd;C:\Users\jzedan\apache-maven-3.8.5\bin;C:\Users\jzedan\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.2+8-LTS-86"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="User Should be able to perform search on google website, choose the specific link, perform search, add filters," classname="This feature file validate some google functionalities" time="33.902">
+    <error message="(935, 1089) is out of bounds of viewport width (1536) and height (739)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-LJFJGJO&apos;, ip: &apos;10.1.10.92&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220729222726, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16440, moz:profile: C:\Users\jzedan\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 78b591b0-9813-4cdb-8066-a64a77eb932f" type="org.openqa.selenium.interactions.MoveTargetOutOfBoundsException">org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: 
+(935, 1089) is out of bounds of viewport width (1536) and height (739)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LJFJGJO', ip: '10.1.10.92', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220729222726, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16440, moz:profile: C:\Users\jzedan\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 78b591b0-9813-4cdb-8066-a64a77eb932f
+</error>
+    <system-out><![CDATA[@smoke
+Feature: This feature file validate some google functionalities
+
+  Background:                               # src/test/resources/uiFeatures/GoogleHome.feature:4
+    Given User navigate to google home page # GoogleHSteps.user_navigate_to_google_home_page()
+
+  @smoke @test
+  Scenario: User Should be able to perform search on google website, choose the specific link, perform search, add filters, # src/test/resources/uiFeatures/GoogleHome.feature:15
+  choose the specific item, add item to cart and validate the correct item added to cart.
+    Given User enters the required search into the search field and clicks the search button                                # GoogleHSteps.user_enters_the_required_search_into_the_search_field_and_clicks_the_search_button(DataTable)
+    Then User chooses the specific link we want to navigate to                                                              # GoogleHSteps.user_chooses_the_specific_link_we_want_to_navigate_to()
+    Then User enters the item want to search for and add filters                                                            # BestBuySteps.user_enters_the_item_want_to_search_for_and_add_filters()
+    Then User chooses the item and add it to cart                                                                           # BestBuySteps.user_chooses_the_item_and_add_it_to_cart()
+      org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: (935, 1089) is out of bounds of viewport width (1536) and height (739)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LJFJGJO', ip: '10.1.10.92', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220729222726, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16440, moz:profile: C:\Users\jzedan\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 78b591b0-9813-4cdb-8066-a64a77eb932f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+	at ui_automation.step_definitions.BestBuySteps.user_chooses_the_item_and_add_it_to_cart(BestBuySteps.java:133)
+	at ?.User chooses the item and add it to cart(file:src/test/resources/uiFeatures/GoogleHome.feature:21)
+
+    And User navigates to cart and verified item added correctly                                                            # BestBuySteps.user_navigates_to_cart_and_verified_item_added_correctly()
+ INFO [pool-1-thread-1] (WebDriverManager.java:1105)- Reading https://api.github.com/repos/mozilla/geckodriver/releases to seek geckodriver
+ INFO [pool-1-thread-1] (WebDriverManager.java:949)- Latest version of geckodriver is 0.31.0
+ INFO [pool-1-thread-1] (Downloader.java:128)- Downloading https://github.com/mozilla/geckodriver/releases/download/v0.31.0/geckodriver-v0.31.0-win64.zip
+ INFO [pool-1-thread-1] (Downloader.java:183)- Extracting binary from compressed file geckodriver-v0.31.0-win64.zip
+ INFO [pool-1-thread-1] (WebDriverManager.java:1078)- Exporting webdriver.gecko.driver as C:\Users\jzedan\.m2\repository\webdriver\geckodriver\win64\0.31.0\geckodriver.exe
+Setup method before
+Setup method after
+61=0 ,HP - Pavilion x360 2-in-1 14" Touch-Screen Laptop - Intel Core i5 - 8GB Memory - 512GB SSD - Natural Silver
+123=1 ,HP - ENVY x360 2-in-1 15.6" Touch-Screen Laptop - Intel Evo Platform Intel Core i7 - 16GB Memory - 512GB SSD - Natural Silver
+470=2 ,Lenovo - IdeaPad 3 15" HD Touch Screen Laptop - Intel Core i3-1115G4 - Intel UHD Graphics - 8GB Memory - 256GB SSD - Almond
+211=3 ,Lenovo - Chromebook 3 11.6" HD Laptop - Celeron N4020 - 4GB Memory - 64GB eMMC - Onyx Black
+238=4 ,Lenovo - Ideapad 1 15.6" FHD Touch-Screen Laptop - Ryzen 7 5700U - 12GB Memory - 512GB SSD - Cloud Grey
+415=5 ,Dell - Inspiron 3511 15.6" Touch Laptop - Intel Core i5 - 8GB Memory - 256GB Solid State Drive - Black
+209=6 ,Lenovo - Flex 3 Chromebook 11.6" HD Touch-screen Laptop - Mediatek MT8183 - 4GB - 64GB eMMC - Abyss Blue
+273=7 ,HP - 17.3" Laptop - Intel Core i5 - 8GB Memory - 256GB SSD
+540=8 ,ASUS - Vivobook 17.3" Laptop - Intel Core 10th Gen i5 - 12GB Memory - 1TB HDD
+34=9 ,HP - ENVY x360 2-in-1 15.6" Touch-Screen Laptop - Intel Evo Platform Intel Core i5 - 8GB Memory - 256GB SSD - Natural Silver
+341=10 ,ASUS - 14.0" Laptop - Intel Celeron N4020 - 4GB Memory - 64GB eMMC - Star Black
+5=11 ,HP - Spectre 2-in-1 16" 3K+ Touch-Screen Laptop - Intel Evo platform Core i7 - 16GB Memory - 512GB SSD - Nocturne Blue
+418=12 ,HP - 15.6" Touch-Screen Laptop - Intel Core i7 - 16GB Memory - 512GB SSD - Natural Silver
+25=13 ,HP - Stream 11.6" Laptop - Intel Celeron - 4GB Memory - 64GB eMMC - Diamond White
+26=14 ,Lenovo - Yoga 7i 16" 2.5K Touch 2-in-1 Laptop - Intel Evo Platform - Core i7-1260P - 16GB Memory - 512GB SSD - Arctic Grey
+82=15 ,HP - ENVY 17.3" Laptop - Intel Core i7 - 12GB Memory - 512GB SSD - Natural Silver
+563=16 ,ASUS - ZenBook Flip 15 Q528EH 15.6" Touch-Screen Laptop-Intel Core i7-16GB Memory-NVIDIA GeForce GTX 1650 Max-Q-512GB SSD - Grey
+160=17 ,HP - 14" Laptop - AMD Ryzen 3 - 8GB Memory - 128GB SSD - Natural Silver
+
+[5, 25, 26, 34, 61, 82, 123, 160, 209, 211, 238, 273, 341, 415, 418, 470, 540, 563]
+Map: {563=16, 418=12, 415=5, 273=7, 82=15, 34=9, 123=1, 26=14, 25=13, 211=3, 540=8, 209=6, 160=17, 61=0, 341=10, 5=11, 238=4, 470=2}
+Max Index Value is: 16
+ASUS - ZenBook Flip 15 Q528EH 15.6" Touch-Screen Laptop-Intel Core i7-16GB Memory-NVIDIA GeForce GTX 1650 Max-Q-512GB SSD - Grey
+]]></system-out>
+    <system-err><![CDATA[1659987698077	geckodriver	INFO	Listening on 127.0.0.1:39559
+1659987698307	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\jzedan\\AppData\\Local\\Temp\\rust_mozprofileqvEBHv"
+1659987699329	Marionette	INFO	Marionette enabled
+1659987699340	Marionette	INFO	Listening on port 63047
+Read port: 63047
+1659987699888	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\jzedan\\AppData\\Local\\Temp\\rust_mozprofileqvEBHv\\search.json.mozlz4", (void 0)))
+Aug 08, 2022 3:41:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.google.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.bestbuy.com"
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/shop/header/dist/client/client-e65c65d60f6c9cd3f3dd72ea3fc40eda.mjs, line 1: ChunkLoadError: Loading chunk 3575 failed.
+(error: https://www.bestbuy.com/~assets/bby/_com/shop/header/dist/client/3575-e65c65d60f6c9cd3f3dd72ea3fc40eda.mjs)
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/shop/header/dist/client/client-e65c65d60f6c9cd3f3dd72ea3fc40eda.mjs, line 1: ChunkLoadError: Loading chunk 1189 failed.
+(error: https://www.bestbuy.com/~assets/bby/_com/shop/header/dist/client/1189-e65c65d60f6c9cd3f3dd72ea3fc40eda.mjs)
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/analyticsInit-966746f52d901bfb1050c197d649de8c.js, line 4: ChunkLoadError: Loading chunk 60 failed.
+(error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/chunks/opinionLabBase_OOo-d54ff19084580341e8d2.js)
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/shop/header/dist/client/client-lv-e65c65d60f6c9cd3f3dd72ea3fc40eda.mjs, line 1: TypeError: e is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/analyticsInit-966746f52d901bfb1050c197d649de8c.js, line 4: ChunkLoadError: Loading chunk 50 failed.
+(error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/chunks/impactLanding-bf67ae221fff232db80e.js)
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/analyticsInit-966746f52d901bfb1050c197d649de8c.js, line 4: ChunkLoadError: Loading chunk 50 failed.
+(error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/chunks/impactLanding-bf67ae221fff232db80e.js)
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/analyticsInit-966746f52d901bfb1050c197d649de8c.js, line 4: ChunkLoadError: Loading chunk 5 failed.
+(error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/chunks/adobeInit-3a3562a762a643760bcf.js)
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/analyticsInit-966746f52d901bfb1050c197d649de8c.js, line 4: ChunkLoadError: Loading chunk 5 failed.
+(error: https://www.bestbuy.com/~assets/bby/_com/analytics-dotcom/chunks/adobeInit-3a3562a762a643760bcf.js)
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/shop/header/dist/client/client-lv-e65c65d60f6c9cd3f3dd72ea3fc40eda.mjs, line 1: TypeError: e is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://www.bestbuy.com/JgNjB/7/jd/kURQ/UMKciQsg/N9fEcpc2/XGwSAQ/RCkf/ZWYbHRs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/3JgSxLv5M8jO-L1UtlL0rxXgrH7WG4OtpnQVSDBU2F0.js line 2 > eval line 2876 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.bestbuy.com/JgNjB/7/jd/kURQ/UMKciQsg/N9fEcpc2/XGwSAQ/RCkf/ZWYbHRs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1659987726103	Marionette	INFO	Stopped listening on port 63047
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.bestbuy.com/~assets/bby/_com/shop/compare-checkbox/dist/client/client-c66434d39a38c71d668cdcfcf07edbca.mjs, line 1: ChunkLoadError: Loading chunk 803 failed.
+(error: https://www.bestbuy.com/~assets/bby/_com/shop/compare-checkbox/dist/client/803-c66434d39a38c71d668cdcfcf07edbca.mjs)
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+]]></system-err>
+  </testcase>
+</testsuite>

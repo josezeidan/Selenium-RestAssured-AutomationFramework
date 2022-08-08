@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: This feature file validate some google functionalities
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 33.902 s <<< FAILURE! - in This feature file validate some google functionalities
+User Should be able to perform search on google website, choose the specific link, perform search, add filters,(This feature file validate some google functionalities)  Time elapsed: 33.902 s  <<< ERROR!
+org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: 
+(935, 1089) is out of bounds of viewport width (1536) and height (739)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LJFJGJO', ip: '10.1.10.92', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220729222726, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16440, moz:profile: C:\Users\jzedan\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 78b591b0-9813-4cdb-8066-a64a77eb932f
+
