@@ -26,7 +26,7 @@ public class BestBuySteps {
     BestBuyPage bestBuy = new BestBuyPage();
     WebDriverWait wait;// = new WebDriverWait(driver,10);
     JavascriptExecutor jse = (JavascriptExecutor) driver;
-    String path =  "src/test/resources/testData/testData.xlsx";
+    String path = "src/test/resources/testData/testData.xlsx";
     Actions act = new Actions(driver);
     String lapName;
 
@@ -34,12 +34,12 @@ public class BestBuySteps {
     @Then("User enters the item want to search for and add filters")
     public void user_enters_the_item_want_to_search_for_and_add_filters() throws Exception {
 
-      String filePath = System.getProperty("user.dir") +"/"+ path;
+        String filePath = System.getProperty("user.dir") + "/" + path;
         ExcelUtility.setExcelFile(filePath, "Sheet1");
-       String category = ExcelUtility.getCellDataAsString(1, 0);
-       bestBuy.searchInput.sendKeys(category);
-       bestBuy.searchInput.sendKeys(Keys.ENTER);
-        waitForVisibility(bestBuy.pcLaptops,50);
+        String category = ExcelUtility.getCellDataAsString(1, 0);
+        bestBuy.searchInput.sendKeys(category);
+        bestBuy.searchInput.sendKeys(Keys.ENTER);
+        waitForVisibility(bestBuy.pcLaptops, 50);
         bestBuy.pcLaptops.click();
 
     }
@@ -51,35 +51,35 @@ public class BestBuySteps {
         hardWait(5000);
         List<WebElement> listOfPCs = bestBuy.laptopListGenerator();
         List<WebElement> rates = bestBuy.ratesListGenerator();
-        Map<Integer,Integer> intRates = new TreeMap<>();
-        int index = 0 ;
+        Map<Integer, Integer> intRates = new TreeMap<>();
+        int index = 0;
         int higherRate = 0;
-        for(WebElement rt:rates){
+        for (WebElement rt : rates) {
             String rateStr = rt.getText().trim();
-            rateStr = rateStr.substring(1,rateStr.length()-1);
+            rateStr = rateStr.substring(1, rateStr.length() - 1);
             int pcRate = Integer.parseInt(rateStr);
-            if(pcRate > higherRate) higherRate = pcRate;
+            if (pcRate > higherRate) higherRate = pcRate;
 
-            intRates.put(pcRate,index);
-            System.out.print(pcRate+"="+index+" ,");
+            intRates.put(pcRate, index);
+            System.out.print(pcRate + "=" + index + " ,");
             System.out.println(listOfPCs.get(index).getText());
             index++;
 
         }
         System.out.println();
         int maxRateIndex = intRates.get(higherRate);
-        System.out.println("Map: "+intRates);
-        System.out.println("Max Index Value is: "+maxRateIndex);
+        System.out.println("Map: " + intRates);
+        System.out.println("Max Index Value is: " + maxRateIndex);
         WebElement maxRatePc = listOfPCs.get(maxRateIndex);
-        waitForVisibility(maxRatePc,50);
+        waitForVisibility(maxRatePc, 50);
         maxRatePc.click();
-         waitForVisibility(bestBuy.laptopName,50);
-        lapName =bestBuy.laptopName.getText().trim();
-        waitForVisibility(bestBuy.addToCart,50);
-        act.moveToElement( bestBuy.addToCart).perform();
+        waitForVisibility(bestBuy.laptopName, 50);
+        lapName = bestBuy.laptopName.getText().trim();
+        waitForVisibility(bestBuy.addToCart, 50);
+        act.moveToElement(bestBuy.addToCart).perform();
         bestBuy.addToCart.click();
-        waitForVisibility(bestBuy.continueShopping,50);
-        act.moveToElement( bestBuy.continueShopping).perform();
+        waitForVisibility(bestBuy.continueShopping, 50);
+        act.moveToElement(bestBuy.continueShopping).perform();
         bestBuy.continueShopping.click();
 
 
@@ -89,18 +89,17 @@ public class BestBuySteps {
     public void user_navigates_to_cart_and_verified_item_added_correctly() throws InterruptedException {
 
 
-        waitForVisibility(bestBuy.cart,50);
+        waitForVisibility(bestBuy.cart, 50);
         bestBuy.cart.click();
         String nameFromCartPage = bestBuy.nameFromCartPage.getText().trim();
 
         System.out.println(lapName);
         System.out.println(nameFromCartPage);
 
-        Assert.assertEquals("Laptop didn't added to cart correctly",lapName,nameFromCartPage);
+        Assert.assertEquals("Laptop didn't added to cart correctly", lapName, nameFromCartPage);
 
 
     }
-
 
 
 }

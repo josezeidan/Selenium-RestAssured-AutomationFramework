@@ -23,13 +23,12 @@ public class GoogleHSteps {
 
     GoogleHPage googleObj = new GoogleHPage();
     Actions act = new Actions(driver);
-    WebDriverWait wait = new WebDriverWait(driver,30);
-
+    WebDriverWait wait = new WebDriverWait(driver, 30);
 
 
     @Given("User navigate to google home page")
     public void user_navigate_to_google_home_page() {
-        driver.get(ConfigurationReader.getProperty("ui-config.properties","google.url"));
+        driver.get(ConfigurationReader.getProperty("ui-config.properties", "google.url"));
 
     }
 
@@ -54,8 +53,8 @@ public class GoogleHSteps {
 
         String title = driver.getTitle().trim();
         Assert.assertEquals("User didn't land successfully",
-                "Laptops and Notebooks: PC Laptop, Notebook - Best Buy",title);
-        System.out.println("Title is : "+title);
+                "Laptops and Notebooks: PC Laptop, Notebook - Best Buy", title);
+        System.out.println("Title is : " + title);
 
     }
 

@@ -9,8 +9,9 @@ import ui_automation.utilities.Driver;
 public class GoogleHPage {
 
     WebDriver driver;
-    public GoogleHPage(){
-        driver= Driver.getInstance().getDriver();
+
+    public GoogleHPage() {
+        driver = Driver.getInstance().getDriver();
         PageFactory.initElements(driver, this);
     }
 
@@ -22,11 +23,6 @@ public class GoogleHPage {
 
     @FindBy(xpath = "//div[@class='yuRUbf']/a/h3[contains(text(),'Best Buy')]")
     public WebElement bestBuy;
-
-
-
-
-
 
 
 }
