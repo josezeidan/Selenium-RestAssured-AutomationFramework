@@ -25,9 +25,4 @@ public class GoogleHPage {
     public WebElement bestBuy;
 
 
-
-
-
-
-
 }
