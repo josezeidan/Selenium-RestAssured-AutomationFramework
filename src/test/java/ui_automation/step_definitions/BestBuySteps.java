@@ -65,6 +65,7 @@ public class BestBuySteps {
             System.out.println(listOfPCs.get(index).getText());
             index++;
 
+
         }
         System.out.println();
         int maxRateIndex = intRates.get(higherRate);
