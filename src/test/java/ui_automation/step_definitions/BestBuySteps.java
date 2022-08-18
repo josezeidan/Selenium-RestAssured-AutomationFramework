@@ -26,7 +26,7 @@ public class BestBuySteps {
     BestBuyPage bestBuy = new BestBuyPage();
     WebDriverWait wait;// = new WebDriverWait(driver,10);
     JavascriptExecutor jse = (JavascriptExecutor) driver;
-    String path = "src/test/resources/testData/testData.xlsx";
+    String path = "/src/test/resources/testData/testData.xlsx";
     Actions act = new Actions(driver);
     String lapName;
 
@@ -34,13 +34,13 @@ public class BestBuySteps {
     @Then("User enters the item want to search for and add filters")
     public void user_enters_the_item_want_to_search_for_and_add_filters() throws Exception {
 
-        String filePath = System.getProperty("user.dir") + "/" + path;
+        String filePath = System.getProperty("user.dir")  + path;
         ExcelUtility.setExcelFile(filePath, "Sheet1");
         String category = ExcelUtility.getCellDataAsString(1, 0);
         bestBuy.searchInput.sendKeys(category);
         bestBuy.searchInput.sendKeys(Keys.ENTER);
-        waitForVisibility(bestBuy.pcLaptops, 50);
-        bestBuy.pcLaptops.click();
+        //waitForVisibility(bestBuy.pcLaptops, 50);
+       // bestBuy.pcLaptops.click();
 
     }
 
@@ -48,16 +48,23 @@ public class BestBuySteps {
     public void user_chooses_the_item_and_add_it_to_cart() throws Exception {
 
 
-        hardWait(5000);
+        hardWait(6000);
         List<WebElement> listOfPCs = bestBuy.laptopListGenerator();
         List<WebElement> rates = bestBuy.ratesListGenerator();
         Map<Integer, Integer> intRates = new TreeMap<>();
         int index = 0;
         int higherRate = 0;
+        int pcRate;
         for (WebElement rt : rates) {
+
             String rateStr = rt.getText().trim();
+            if(rateStr.equals("Not Yet Reviewed")) rateStr = "(0)";
             rateStr = rateStr.substring(1, rateStr.length() - 1);
-            int pcRate = Integer.parseInt(rateStr);
+            if(rateStr.contains(",")){
+                rateStr = rateStr.substring(0, rateStr.indexOf(',')) +
+                          rateStr.substring(rateStr.indexOf(',')+1) ;
+            }
+                pcRate = Integer.parseInt(rateStr);
             if (pcRate > higherRate) higherRate = pcRate;
 
             intRates.put(pcRate, index);
