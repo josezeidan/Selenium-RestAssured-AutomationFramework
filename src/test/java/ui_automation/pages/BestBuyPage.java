@@ -73,4 +73,28 @@ public class BestBuyPage {
         return driver.findElements(By.xpath("//div[@id='main-results']/ol/li//div[@class='ratings-reviews']//i/following-sibling::span"));
     }
 
+    /**
+     * method return a list of WebElements (prices)
+     *
+     * @return List<WebElement>
+     */
+    public List<WebElement> pricesListGenerator() {
+
+        return driver.findElements(By.xpath("//div[@id='main-results']/ol/li//div[@class='priceView-hero-price priceView-customer-price']//span[@aria-hidden='true']"));
+    }
+
+
+    /**
+     * method return a list of WebElements (addToCart)
+     *
+     * @return List<WebElement>
+     */
+    public List<WebElement> addToCartListGenerator() {
+
+        return driver.findElements(By.xpath("//div[@class='sli-add-to-cart']"));
+    }
+
+
+
+
 }
