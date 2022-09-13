@@ -29,6 +29,9 @@ public class BestBuySteps {
     String path = "/src/test/resources/testData/testData.xlsx";
     Actions act = new Actions(driver);
     String lapName;
+    String maxPriceName;
+    String minPriceName;
+    List<WebElement> listOfPCs;
 
 
     @Then("User enters the item want to search for and add filters")
@@ -39,8 +42,8 @@ public class BestBuySteps {
         String category = ExcelUtility.getCellDataAsString(1, 0);
         bestBuy.searchInput.sendKeys(category);
         bestBuy.searchInput.sendKeys(Keys.ENTER);
-        //waitForVisibility(bestBuy.pcLaptops, 50);
-       // bestBuy.pcLaptops.click();
+        waitForVisibility(bestBuy.pcLaptops, 50);
+        bestBuy.pcLaptops.click();
 
     }
 
@@ -49,7 +52,7 @@ public class BestBuySteps {
 
 
         hardWait(6000);
-        List<WebElement> listOfPCs = bestBuy.laptopListGenerator();
+        listOfPCs = bestBuy.laptopListGenerator();
         List<WebElement> rates = bestBuy.ratesListGenerator();
         Map<Integer, Integer> intRates = new TreeMap<>();
         int index = 0;
@@ -58,16 +61,16 @@ public class BestBuySteps {
         for (WebElement rt : rates) {
 
             String rateStr = rt.getText().trim();
-            if(rateStr.equals("Not Yet Reviewed")) rateStr = "(0)";
-            rateStr = rateStr.substring(1, rateStr.length() - 1);
+            if(rateStr.equals("Not Yet Reviewed")) rateStr = "(0)"; //(11,732)
+            rateStr = rateStr.substring(1, rateStr.length() - 1); //11,732
             if(rateStr.contains(",")){
                 rateStr = rateStr.substring(0, rateStr.indexOf(',')) +
-                          rateStr.substring(rateStr.indexOf(',')+1) ;
+                          rateStr.substring(rateStr.indexOf(',')+1) ;   //11732
             }
-                pcRate = Integer.parseInt(rateStr);
+                pcRate = Integer.parseInt(rateStr);     // 11732 as integer
             if (pcRate > higherRate) higherRate = pcRate;
 
-            intRates.put(pcRate, index);
+            intRates.put(pcRate, index); // key = 11732, value = 0,1,2
             System.out.print(pcRate + "=" + index + " ,");
             System.out.println(listOfPCs.get(index).getText());
             index++;
@@ -76,6 +79,54 @@ public class BestBuySteps {
         }
         System.out.println();
         int maxRateIndex = intRates.get(higherRate);
+        System.out.println("Map: " + intRates);
+        System.out.println("Max Index Value is: " + maxRateIndex);
+        WebElement maxRatePc = listOfPCs.get(maxRateIndex);
+        waitForVisibility(maxRatePc, 50);
+        maxRatePc.click();
+        waitForVisibility(bestBuy.laptopName, 50);
+        lapName = bestBuy.laptopName.getText().trim();
+        waitForVisibility(bestBuy.addToCart, 50);
+        act.moveToElement(bestBuy.addToCart).perform();
+        bestBuy.addToCart.click();
+        waitForVisibility(bestBuy.continueShopping, 50);
+        act.moveToElement(bestBuy.continueShopping).perform();
+        bestBuy.continueShopping.click();
+
+
+    }
+
+    @Then("User chooses the item with lowest rate and add it to cart")
+    public void userChoosesTheItemWithLowestRateAndAddItToCart() throws InterruptedException {
+
+        hardWait(6000);
+        listOfPCs = bestBuy.laptopListGenerator();
+        List<WebElement> rates = bestBuy.ratesListGenerator();
+        Map<Integer, Integer> intRates = new TreeMap<>();
+        int index = 0;
+        int lowerRate = 10000;
+        int pcRate;
+        for (WebElement rt : rates) {
+
+            String rateStr = rt.getText().trim();
+            if(rateStr.equals("Not Yet Reviewed")) rateStr = "(0)"; //(11,732)
+            rateStr = rateStr.substring(1, rateStr.length() - 1); //11,732
+            if(rateStr.contains(",")){
+                rateStr = rateStr.substring(0, rateStr.indexOf(',')) +
+                        rateStr.substring(rateStr.indexOf(',')+1) ;   //11732
+            }
+            pcRate = Integer.parseInt(rateStr);     // 11732 as integer
+            if (pcRate < lowerRate) lowerRate = pcRate;
+
+            intRates.put(pcRate, index); // key = 11732, value = 0,1,2
+            System.out.print(pcRate + "=" + index + " ,");
+            System.out.println(listOfPCs.get(index).getText());
+            index++;
+
+
+        }
+        System.out.println();
+        int maxRateIndex = intRates.get(lowerRate);
         System.out.println("Map: " + intRates);
         System.out.println("Max Index Value is: " + maxRateIndex);
         WebElement maxRatePc = listOfPCs.get(maxRateIndex);
@@ -108,6 +159,85 @@ public class BestBuySteps {
 
 
     }
+
+    @Then("User chose the lower and lower and higher laptop price")
+    public void user_chose_the_lower_and_lower_and_higher_laptop_price() throws InterruptedException {
+
+        hardWait(6000);
+        listOfPCs = bestBuy.laptopListGenerator();
+        List<WebElement> prices = bestBuy.pricesListGenerator();
+        List<WebElement> addToCart = bestBuy.addToCartListGenerator();
+        Map<Double, Integer> intPrices = new TreeMap<>();
+        int index = 0;
+        double higherPrice = 0;
+        double lowerPrice = 0;
+        double pcPrice;
+        for (WebElement pr : prices) {
+
+            String priceStr = pr.getText().trim();
+            priceStr = priceStr.substring(1,priceStr.length()); //$11,732.99
+            if(priceStr.contains(",")){
+                priceStr = priceStr.substring(0, priceStr.indexOf(',')) +
+                        priceStr.substring(priceStr.indexOf(',')+1) ;   //11732.99
+            }
+
+            pcPrice = Double.parseDouble(priceStr);     // 11732.99 as integer
+            if (pcPrice > higherPrice) higherPrice = pcPrice;
+            if (pcPrice < lowerPrice) lowerPrice = pcPrice;
+
+            intPrices.put(pcPrice, index); // key = 11732, value = 0,1,2
+            System.out.print(pcPrice + "=" + index + " ,");
+            System.out.println(listOfPCs.get(index).getText());
+            index++;
+
+
+        }
+        System.out.println();
+        int maxPriceIndex = intPrices.get(higherPrice);
+        int minPriceIndex = intPrices.get(lowerPrice);
+        System.out.println("Map: " + intPrices);
+        System.out.println("Max Index Value is: " + maxPriceIndex);
+        System.out.println("Min Index Value is: " + minPriceIndex);
+
+
+
+        WebElement maxPricePc = listOfPCs.get(maxPriceIndex);
+        WebElement minPricePc = listOfPCs.get(minPriceIndex);
+
+        waitForVisibility(maxPricePc, 50);
+        maxPriceName = maxPricePc.getText().trim();
+        addToCart.get(maxPriceIndex).click();
+        waitForVisibility(bestBuy.continueShopping, 50);
+        act.moveToElement(bestBuy.continueShopping).perform();
+        bestBuy.continueShopping.click();
+
+
+        waitForVisibility(minPricePc, 50);
+        minPriceName = minPricePc.getText().trim();
+        addToCart.get(minPriceIndex).click();
+        waitForVisibility(bestBuy.continueShopping, 50);
+        act.moveToElement(bestBuy.continueShopping).perform();
+        bestBuy.continueShopping.click();
+
+
+
+//        waitForVisibility(bestBuy.laptopName, 50);
+//        lapName = bestBuy.laptopName.getText().trim();
+//        waitForVisibility(bestBuy.addToCart, 50);
+//        act.moveToElement(bestBuy.addToCart).perform();
+//        bestBuy.addToCart.click();
+//        waitForVisibility(bestBuy.continueShopping, 50);
+//        act.moveToElement(bestBuy.continueShopping).perform();
+//        bestBuy.continueShopping.click();
+
+
+    }
+
+    @Then("User verifies that laptops got added correctly to add to cart")
+    public void user_verifies_that_laptops_got_added_correctly_to_add_to_cart() {
+
+    }
+
 
 
 }

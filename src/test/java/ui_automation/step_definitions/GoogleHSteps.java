@@ -32,7 +32,7 @@ public class GoogleHSteps {
 
     }
 
-    @Given("User enters the required search into the search field and clicks the search button")
+    @When("User enters the required search into the search field and clicks the search button")
     public void user_enters_the_required_search_into_the_search_field_and_clicks_the_search_button(DataTable dataTable) throws InterruptedException {
 
         List<String> searchWords = dataTable.asList(String.class);
