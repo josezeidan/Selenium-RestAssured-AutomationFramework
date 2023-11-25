@@ -1,0 +1,26 @@
+name: Yoll Manual workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Person to greet'
+        default: 'World'
+        required: true
+        type: string
+
+      age:
+        description: 'Person age'
+        default: 'Age'
+        required: true
+        type: string
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Send greetings
+      run: echo "Hello ${{ inputs.name }}"
+    - name: Send age
+      run: echo "My Age ${{ inputs.age }}"
