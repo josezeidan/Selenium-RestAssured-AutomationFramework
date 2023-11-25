@@ -1,0 +1,139 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3180918400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User navigate to google home page",
+            "match": {
+              "location": "GoogleHSteps.user_navigate_to_google_home_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-11-25T19:06:03.508Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3320576300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "User should be able to choose the laptop with lowest rate",
+        "description": "",
+        "id": "this-feature-file-validate-some-google-functionalities;user-should-be-able-to-choose-the-laptop-with-lowest-rate",
+        "after": [
+          {
+            "result": {
+              "duration": 877918900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 516065000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User enters the required search into the search field and clicks the search button",
+            "match": {
+              "location": "GoogleHSteps.user_enters_the_required_search_into_the_search_field_and_clicks_the_search_button(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Laptops"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2881413400,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User chooses the specific link we want to navigate to",
+            "match": {
+              "location": "GoogleHSteps.user_chooses_the_specific_link_we_want_to_navigate_to()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26427541300,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User enters the item want to search for and add filters",
+            "match": {
+              "location": "BestBuySteps.user_enters_the_item_want_to_search_for_and_add_filters()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26018942000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User chooses the item with lowest rate and add it to cart",
+            "match": {
+              "location": "BestBuySteps.userChoosesTheItemWithLowestRateAndAddItToCart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10163701800,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User navigates to cart and verified item added correctly",
+            "match": {
+              "location": "BestBuySteps.user_navigates_to_cart_and_verified_item_added_correctly()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@jose"
+          }
+        ]
+      }
+    ],
+    "name": "This feature file validate some google functionalities",
+    "description": "",
+    "id": "this-feature-file-validate-some-google-functionalities",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/uiFeatures/GoogleHome.feature",
+    "tags": []
+  }
+]

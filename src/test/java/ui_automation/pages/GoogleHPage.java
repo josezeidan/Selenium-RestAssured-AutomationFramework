@@ -15,13 +15,13 @@ public class GoogleHPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//input[@class='gLFyf gsfi']")
+    @FindBy(id = "APjFqb")
     public WebElement searchInput;
 
     @FindBy(xpath = "//div[@class='FPdoLc lJ9FBc']/center/input[@name='btnK']")
     public WebElement searchButton;
 
-    @FindBy(xpath = "//div[@class='yuRUbf']/a/h3[contains(text(),'Best Buy')]")
+    @FindBy(xpath = "//h3[text()='Laptops and Notebooks']")
     public WebElement bestBuy;
 
 

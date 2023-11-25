@@ -83,7 +83,11 @@ public class BestBuySteps {
         System.out.println("Max Index Value is: " + maxRateIndex);
         WebElement maxRatePc = listOfPCs.get(maxRateIndex);
         waitForVisibility(maxRatePc, 50);
-        maxRatePc.click();
+        //jse.executeScript("arguments[0].scrollIntoView();", maxRatePc);
+        act.moveToElement(listOfPCs.get(maxRateIndex)).perform();
+        listOfPCs.get(maxRateIndex).click();
+       // maxRatePc.click();
+
         waitForVisibility(bestBuy.laptopName, 50);
         lapName = bestBuy.laptopName.getText().trim();
         waitForVisibility(bestBuy.addToCart, 50);
@@ -126,12 +130,14 @@ public class BestBuySteps {
 
         }
         System.out.println();
-        int maxRateIndex = intRates.get(lowerRate);
+        int lowRateIndex = intRates.get(lowerRate);
         System.out.println("Map: " + intRates);
-        System.out.println("Max Index Value is: " + maxRateIndex);
-        WebElement maxRatePc = listOfPCs.get(maxRateIndex);
-        waitForVisibility(maxRatePc, 50);
-        maxRatePc.click();
+        System.out.println("Max Index Value is: " + lowRateIndex);
+
+        waitForVisibility(listOfPCs.get(lowRateIndex), 50);
+        act.moveToElement(listOfPCs.get(lowRateIndex)).perform();
+        listOfPCs.get(lowRateIndex).click();
+
         waitForVisibility(bestBuy.laptopName, 50);
         lapName = bestBuy.laptopName.getText().trim();
         waitForVisibility(bestBuy.addToCart, 50);

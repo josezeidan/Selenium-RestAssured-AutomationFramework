@@ -566,3 +566,86 @@
 2022-09-13 00:26:25,410 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 105.0.5195.52 (since Google Chrome 105 is installed in your machine)
 2022-09-13 00:26:25,415 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\105.0.5195.52\chromedriver.exe
 2022-09-13 00:26:42,350 - ui_automation.utilities.WaitHelper -INFO - 6000
+2023-10-24 20:56:38,476 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-10-24 20:58:59,848 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (since Google Chrome 118 is installed in your machine)
+2023-10-24 20:58:59,867 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-11-25 11:28:17,032 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-11-25 11:28:19,347 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (since Google Chrome 119 is installed in your machine)
+2023-11-25 11:28:19,347 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-11-25 11:28:20,287 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (since Google Chrome 119 is installed in your machine)
+2023-11-25 11:28:20,299 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-11-25 12:21:47,635 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (since Google Chrome 119 is installed in your machine)
+2023-11-25 12:21:47,697 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-11-25 12:22:08,877 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (since Google Chrome 119 is installed in your machine)
+2023-11-25 12:22:08,938 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-11-25 12:22:11,583 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (since Google Chrome 119 is installed in your machine)
+2023-11-25 12:22:11,617 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-11-25 12:22:13,675 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (since Google Chrome 119 is installed in your machine)
+2023-11-25 12:22:13,704 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-11-25 12:24:34,555 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (since Google Chrome 119 is installed in your machine)
+2023-11-25 12:24:34,609 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-11-25 12:27:32,821 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (since Google Chrome 119 is installed in your machine)
+2023-11-25 12:27:32,876 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.m2\repository\webdriver\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-11-25 12:29:47,989 - io.github.bonigarcia.wdm.online.HttpClient -ERROR - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_119
+2023-11-25 12:29:48,005 - io.github.bonigarcia.wdm.versions.VersionDetector -WARN - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_119 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_119)
+2023-11-25 12:29:48,226 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+2023-11-25 12:29:49,340 - io.github.bonigarcia.wdm.online.Downloader -INFO - Downloading https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_win32.zip
+2023-11-25 12:29:50,396 - io.github.bonigarcia.wdm.online.Downloader -INFO - Extracting driver from compressed file chromedriver_win32.zip
+2023-11-25 12:29:50,768 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\jzedan\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-11-25 12:38:52,607 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using geckodriver 0.33.0 (resolved driver for Firefox 119)
+2023-11-25 12:38:52,643 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Reading https://raw.githubusercontent.com/bonigarcia/webdrivermanager/master/docs/mirror/geckodriver to seek geckodriver
+2023-11-25 12:38:52,854 - io.github.bonigarcia.wdm.online.Downloader -INFO - Downloading https://github.com/mozilla/geckodriver/releases/download/v0.33.0/geckodriver-v0.33.0-win64.zip
+2023-11-25 12:38:53,473 - io.github.bonigarcia.wdm.online.Downloader -INFO - Extracting driver from compressed file geckodriver-v0.33.0-win64.zip
+2023-11-25 12:38:53,527 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.gecko.driver as C:\Users\jzedan\.cache\selenium\geckodriver\win64\0.33.0\geckodriver.exe
+2023-11-25 12:39:59,166 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using geckodriver 0.33.0 (resolved driver for Firefox 119)
+2023-11-25 12:39:59,213 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.gecko.driver as C:\Users\jzedan\.cache\selenium\geckodriver\win64\0.33.0\geckodriver.exe
+2023-11-25 12:40:07,130 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using geckodriver 0.33.0 (resolved driver for Firefox 119)
+2023-11-25 12:40:07,141 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.gecko.driver as C:\Users\jzedan\.cache\selenium\geckodriver\win64\0.33.0\geckodriver.exe
+2023-11-25 12:40:14,525 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using geckodriver 0.33.0 (resolved driver for Firefox 119)
+2023-11-25 12:40:14,536 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.gecko.driver as C:\Users\jzedan\.cache\selenium\geckodriver\win64\0.33.0\geckodriver.exe
+2023-11-25 12:44:31,604 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using geckodriver 0.33.0 (resolved driver for Firefox 119)
+2023-11-25 12:44:31,669 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.gecko.driver as C:\Users\jzedan\.cache\selenium\geckodriver\win64\0.33.0\geckodriver.exe
+2023-11-25 12:45:38,811 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using geckodriver 0.33.0 (resolved driver for Firefox 119)
+2023-11-25 12:45:38,867 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.gecko.driver as C:\Users\jzedan\.cache\selenium\geckodriver\win64\0.33.0\geckodriver.exe
+2023-11-25 12:48:19,467 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Reading https://raw.githubusercontent.com/bonigarcia/webdrivermanager/master/docs/mirror/selenium to seek IEDriverServer
+2023-11-25 12:48:20,284 - io.github.bonigarcia.wdm.online.Downloader -INFO - Downloading https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.14.0/IEDriverServer_x64_4.14.0.zip
+2023-11-25 12:48:20,888 - io.github.bonigarcia.wdm.online.Downloader -INFO - Extracting driver from compressed file iedriverserver_x64_4.14.0.zip
+2023-11-25 12:48:20,937 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.ie.driver as C:\Users\jzedan\.cache\selenium\IEDriverServer\win64\4.14.0\IEDriverServer.exe
+2023-11-25 12:52:43,180 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using msedgedriver 119.0.2151.72 (resolved driver for Edge 119)
+2023-11-25 12:52:43,212 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+2023-11-25 12:52:44,396 - io.github.bonigarcia.wdm.online.Downloader -INFO - Downloading https://msedgedriver.azureedge.net/119.0.2151.72/edgedriver_win64.zip
+2023-11-25 12:52:44,903 - io.github.bonigarcia.wdm.online.Downloader -INFO - Extracting driver from compressed file edgedriver_win64.zip
+2023-11-25 12:52:45,134 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.edge.driver as C:\Users\jzedan\.cache\selenium\msedgedriver\win64\119.0.2151.72\msedgedriver.exe
+2023-11-25 13:11:30,305 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using msedgedriver 119.0.2151.72 (resolved driver for Edge 119)
+2023-11-25 13:11:30,352 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.edge.driver as C:\Users\jzedan\.cache\selenium\msedgedriver\win64\119.0.2151.72\msedgedriver.exe
+2023-11-25 13:12:16,545 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using msedgedriver 119.0.2151.72 (resolved driver for Edge 119)
+2023-11-25 13:12:16,613 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.edge.driver as C:\Users\jzedan\.cache\selenium\msedgedriver\win64\119.0.2151.72\msedgedriver.exe
+2023-11-25 13:16:04,106 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using msedgedriver 119.0.2151.72 (resolved driver for Edge 119)
+2023-11-25 13:16:04,158 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.edge.driver as C:\Users\jzedan\.cache\selenium\msedgedriver\win64\119.0.2151.72\msedgedriver.exe
+2023-11-25 13:16:42,361 - ui_automation.utilities.WaitHelper -INFO - 6000
+2023-11-25 13:24:23,272 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using msedgedriver 119.0.2151.72 (resolved driver for Edge 119)
+2023-11-25 13:24:23,320 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.edge.driver as C:\Users\jzedan\.cache\selenium\msedgedriver\win64\119.0.2151.72\msedgedriver.exe
+2023-11-25 13:25:03,845 - ui_automation.utilities.WaitHelper -INFO - 6000
+2023-11-25 13:34:37,610 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using msedgedriver 119.0.2151.72 (resolved driver for Edge 119)
+2023-11-25 13:34:37,665 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.edge.driver as C:\Users\jzedan\.cache\selenium\msedgedriver\win64\119.0.2151.72\msedgedriver.exe
+2023-11-25 13:35:15,762 - ui_automation.utilities.WaitHelper -INFO - 6000
+2023-11-25 13:41:35,327 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using msedgedriver 119.0.2151.72 (resolved driver for Edge 119)
+2023-11-25 13:41:35,380 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.edge.driver as C:\Users\jzedan\.cache\selenium\msedgedriver\win64\119.0.2151.72\msedgedriver.exe
+2023-11-25 13:42:19,405 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using msedgedriver 119.0.2151.72 (resolved driver for Edge 119)
+2023-11-25 13:42:19,460 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.edge.driver as C:\Users\jzedan\.cache\selenium\msedgedriver\win64\119.0.2151.72\msedgedriver.exe
+2023-11-25 13:42:56,758 - ui_automation.utilities.WaitHelper -INFO - 6000
+2023-11-25 13:46:24,107 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using msedgedriver 119.0.2151.72 (resolved driver for Edge 119)
+2023-11-25 13:46:24,164 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.edge.driver as C:\Users\jzedan\.cache\selenium\msedgedriver\win64\119.0.2151.72\msedgedriver.exe
+2023-11-25 13:46:57,732 - ui_automation.utilities.WaitHelper -INFO - 6000
+2023-11-25 13:53:55,617 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using msedgedriver 119.0.2151.72 (resolved driver for Edge 119)
+2023-11-25 13:53:55,657 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.edge.driver as C:\Users\jzedan\.cache\selenium\msedgedriver\win64\119.0.2151.72\msedgedriver.exe
+2023-11-25 13:54:31,297 - ui_automation.utilities.WaitHelper -INFO - 6000
+2023-11-25 13:57:16,256 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using msedgedriver 119.0.2151.72 (resolved driver for Edge 119)
+2023-11-25 13:57:16,309 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.edge.driver as C:\Users\jzedan\.cache\selenium\msedgedriver\win64\119.0.2151.72\msedgedriver.exe
+2023-11-25 13:57:58,945 - ui_automation.utilities.WaitHelper -INFO - 6000
+2023-11-25 14:00:14,777 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using msedgedriver 119.0.2151.72 (resolved driver for Edge 119)
+2023-11-25 14:00:14,844 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.edge.driver as C:\Users\jzedan\.cache\selenium\msedgedriver\win64\119.0.2151.72\msedgedriver.exe
+2023-11-25 14:00:59,686 - ui_automation.utilities.WaitHelper -INFO - 6000
+2023-11-25 14:06:04,695 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using msedgedriver 119.0.2151.72 (resolved driver for Edge 119)
+2023-11-25 14:06:04,771 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.edge.driver as C:\Users\jzedan\.cache\selenium\msedgedriver\win64\119.0.2151.72\msedgedriver.exe
+2023-11-25 14:06:39,925 - ui_automation.utilities.WaitHelper -INFO - 6000

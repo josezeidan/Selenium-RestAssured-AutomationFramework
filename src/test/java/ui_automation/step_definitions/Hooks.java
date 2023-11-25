@@ -22,7 +22,7 @@ public class Hooks {
         driver = Driver.getInstance().getDriver();
 
         System.out.println("Setup method before");
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         System.out.println("Setup method after");
         driver.manage().window().maximize();
     }

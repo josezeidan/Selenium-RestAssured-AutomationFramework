@@ -23,7 +23,7 @@ public class BestBuyPage {
     @FindBy(id = "gh-search-input")
     public WebElement searchInput;
 
-    @FindBy(xpath = "//a[contains(text(),'PC Laptops')]")
+    @FindBy(xpath = "//a[contains(text(),'Windows Laptops')]")
     public WebElement pcLaptops;
 
     @FindBy(id = "currentprice_facet-$750-$999.99-8")
@@ -60,7 +60,7 @@ public class BestBuyPage {
      */
     public List<WebElement> laptopListGenerator() {
 
-        return driver.findElements(By.xpath("//div[@id='main-results']/ol/li//div[@class='information']/h4/a"));
+        return driver.findElements(By.xpath("//div[@class='column-middle']/h4/a"));
     }
 
     /**
